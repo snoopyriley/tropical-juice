@@ -42,7 +42,8 @@
     height: 20%;
 }
 
-.code-block-heading p {
+.code-block-heading p,
+.code-block-heading a {
     color: #e46eff;
 }
 
