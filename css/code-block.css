@@ -46,6 +46,10 @@
     color: #e46eff;
 }
 
+.code-block-heading a {
+    font-weight: bold;
+}
+
 .code-block-body {
     display: flex;
     flex-direction: column;
@@ -63,4 +67,19 @@
 
 .spacer {
     height: 10px;
+}
+
+.full-height {
+    height: 95%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.code-block-body-fh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444;
+    border-radius: inherit;
+    height: 100%;
 }
