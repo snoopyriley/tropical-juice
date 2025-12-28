@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>login | tungsten</title>
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function validateInviteCode(event) {
+        const inviteCode = document.querySelector('input[name="invitecode"]').value;
+        if (inviteCode !== "content") {
+          alert("DEBUG: Incorrect password entered.");
+          event.preventDefault(); // Prevent form submission
+        }
+
+        else {
+          alert("DEBUG: Correct password entered.")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="content">
+      <h3>[tropicaljuice.me]</h3>
+      <p>Welcome to my website! I made this to show off my projects and other things I have made.</p>
+      <p>You need to have an invite code to log in.</p>
+      <form class="form" action="loggedin.html" onsubmit="validateInviteCode(event)">
+        <input type="textfield" class="inputtext" name="invitecode" placeholder="enter your invite code" required>
+        <button type="submit" name="register">submit</button>
+      </form>
+      <table cellspacing="0" cellpadding="2" border="0" width="100%">
+        <tbody>
+          <p style="font-weight: 700">
+            <!-- <a href="https://youtube.com/fortnite"> about </a>
+            &nbsp;&nbsp;
+            <a href="https://youtube.com/fortnite"> contact </a> -->
+            &nbsp;&nbsp;
+            <a href="./information/terms.html">terms</a>
+            &nbsp;&nbsp;
+            <a href="./information/privacy.html">privacy</a>
+            <br>
+            &copy; 2024 Riley Smith
+          </p>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
