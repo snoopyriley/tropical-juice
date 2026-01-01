@@ -25,10 +25,12 @@
     color: #e46eff;
     text-decoration: none;
     font-family: inherit;
+    font-weight: 700;
 }
 
 .code-block a:hover {
     text-decoration: underline;
+    
 }
 
 .code-block-heading {
@@ -47,7 +49,7 @@
 }
 
 .code-block-heading a {
-    font-weight: bold;
+    color: #e46eff;
 }
 
 .code-block-body {
